@@ -48,6 +48,6 @@ methods: PUT
 ```
 #### Get user profile by userID
 ```
-/userprofile/{id}
+/userprofile
 methods: GET
 ```
