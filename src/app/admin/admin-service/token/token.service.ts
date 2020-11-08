@@ -7,14 +7,15 @@ import { AdminConfig } from '../../AdminConfig';
 export class TokenService {
 
   private iss = {
-    login: AdminConfig.loginAPI
+    //login: AdminConfig.loginAPI,
+    username: ''
   }
-  
+
   constructor() { }
 
-  handle(token) {
+  handle(username, token) {
+    this.iss.username = username;
     this.setToken(token);
-    console.log(this.loggedIn());
   }
 
   // Store The Token In The Cookie
@@ -36,18 +37,18 @@ export class TokenService {
     const token = this.getToken();
     if (token) {
       const payload = this.payload(token);
-      return Object.values(this.iss).indexOf(payload.iss) > -1 ? true : false;
+      return Object.values(this.iss).indexOf(payload.email) > -1 ? true : false;
     }
     return false;
   }
 
-  payload(token) {  
+  payload(token) {
     const payload = token.split('.')[1];
     return this.decode(payload);
   }
 
   // decode the token to fetch the data from it
-  decode(payload) {  
+  decode(payload) {
     return JSON.parse(atob(payload));
   }
 

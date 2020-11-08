@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   errors = [];
   error = null;
   public form = {
-    email: null,
+    username: null,
     password: null
   };
   process = false;
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
 
   handleResponse(response) {
     this.process = false;
-    this.tokenService.handle(response.token);
+    this.tokenService.handle(this.form.username, response.token);
     this.authService.changeAuthStatus(true);
     this.router.navigate(['../'], {relativeTo: this.route});
   }
