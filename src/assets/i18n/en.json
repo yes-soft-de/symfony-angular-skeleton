@@ -1,0 +1,20 @@
+{
+  "dashboard" : "Dashboard",
+  "dashboard-page": "Dashboard Page",
+  "total-cars": "Total Cars",
+  "total-devices": "Total Devices",
+  "total-real-estate": "Total Real Estate",
+  "total-reports": "Total Reports",
+  "total-chats": "Total Chats",
+  "chats-number": "Chats Number",
+  "chats-with-lawyer": "The number of chats with lawyer",
+  "chats-with-users": "The number of chats with users",
+  "reactions": "Reactions Number",
+  "real-estate-reaction-number": "Real Estates Reactions Number",
+  "car-reaction-number": "Cars Reactions Number",
+  "device-reaction-number": "Devices Reactions Number",
+  "latest": "Latest",
+  "cars" : "Cars",
+  "devices" : "Devices",
+  "logout": "Logout"
+}

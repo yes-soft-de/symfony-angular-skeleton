@@ -1,0 +1,20 @@
+{
+  "dashboard" : "لوحة التحكم",
+  "dashboard-page": "صفحة لوحة التحكم",
+  "total-cars": "مجموع السيارات",
+  "total-devices": "مجموع الأجهزة",
+  "total-real-estate": "مجموع العقارات",
+  "total-reports": "مجموع التقارير",
+  "total-chats": "مجموع المحادثات",
+  "chats-number": "عدد المحادثات",
+  "chats-with-lawyer": "عدد المحادثات مع المحامي",
+  "chats-with-users": "عدد المحادثات مع المستخدمين",
+  "reactions": "عدد التفاعلات",
+  "real-estate-reaction-number": "عدد تفاعلات العقارات",
+  "car-reaction-number": "عدد تفاعلات السيارات",
+  "device-reaction-number": "عدد تفاعلات الاجهزة",
+  "latest": "أخر",
+  "cars" : "سيارات",
+  "devices" : "أجهزة",
+  "logout": "تسجيل خروج"
+}
